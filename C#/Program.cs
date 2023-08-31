@@ -1,17 +1,7 @@
 ﻿using C_;
 
-try
-{
+ReportWriter reportWriter=new ReportWriter();
+Notification notification=new Notification();
+reportWriter.OnNotificationHub += notification.sendEmail;
+reportWriter.writeReport();
 
-    Filters filter = new Filters();
-    filter = null;
-    filter.exposure();
-}
-catch(Exception e)
-{
-    Console.WriteLine(e);
-}
-finally
-{
-
-}

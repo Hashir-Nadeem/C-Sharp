@@ -10,7 +10,7 @@ namespace C_
     public class Delegates
     {
         //method having same signature this delegate can point to them
-        //public delegate void filtersHub();
+        public delegate void filtersHub();
 
         public  Filters _filter { get; set; }
         public Delegates(Filters filter)
